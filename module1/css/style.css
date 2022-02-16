@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-* {font-family: 'Ubuntu', sans-serif;} 
+* {font-family: 'Ubuntu', sans-serif;}
 @import url('reset.css');
 * {box-sizing: border-box;}
 :root {
@@ -82,7 +82,7 @@ nav {padding-top: 62px;}
     font-style: normal;
     font-size: 80px;
     line-height: 110%;
-    
+
 }
 
 .promo__subtitle {
@@ -124,7 +124,7 @@ nav {padding-top: 62px;}
     top:263px;
     left: 363px;
     width: 885px;
-    height: 468px;  
+    height: 468px;
 }
 .promo__img img {
     width: 100%;
@@ -135,12 +135,15 @@ nav {padding-top: 62px;}
 .data {
     margin-top: 200px;
     height: 100%;
-    
+
 }
 .data__wrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /*
+    ** TODO: в нулевых значениях пишем (.15)
+    */
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
     min-height: 560px;
@@ -170,7 +173,9 @@ nav {padding-top: 62px;}
     line-height: 160%;
     color: #4B5D68;
 }
-
+/*
+** TODO: лучше придерживаться одного стиля
+*/
 .features {margin-top: 150px;}
 .features__title {
     text-align: center;
@@ -250,6 +255,9 @@ nav {padding-top: 62px;}
 .testi {margin-top: 150px; overflow: hidden;}
 .testi__bg {
     position: relative;
+    /*
+    ** TODO: лучше использовать сокращенную запись 'padding: 93px 53px 0 93px'
+    */
     padding-top: 93px;
     padding-left: 93px;
     padding-right: 53px;
@@ -281,6 +289,9 @@ nav {padding-top: 62px;}
     width: 400px;
     height: 330px;
     background: #FFFFFF;
+    /*
+    ** TODO: в нулевых значениях 'px' опускаем
+    */
     box-shadow: 0px 20px 0px rgba(15, 105, 226, 0.1);
     border-radius: 20px;
     margin-left: 20px;
@@ -301,11 +312,11 @@ nav {padding-top: 62px;}
 .slider__item-case {
     width: 180px;
     margin-left: 30px;
-    
+
 }
 .slider__item-case-active {
     width: 385px;
-    
+
 }
 
 .slider__item-title {
@@ -321,7 +332,7 @@ nav {padding-top: 62px;}
     letter-spacing: 0.01em;
     color: #9C69E2;
 }
-    
+
 .slider__item-text {
     height: 130px;
     width: 100%;
@@ -334,13 +345,17 @@ nav {padding-top: 62px;}
 }
 
 .slider__item-cover::after{
+    /*
+    ** TODO: лучше придерживаться одного стиля написания
+    ** выше было так - content:""
+    */
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #9C69E2;
     box-sizing: border-box;
@@ -380,7 +395,7 @@ nav {padding-top: 62px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 .slider__btn-left {
     width: 40px;
@@ -491,7 +506,7 @@ nav {padding-top: 62px;}
         width: 600px;
         height: auto;
     }
-   
+
     .data {margin-top: 150px;}
     .data__img {width: 350px;}
     .data__text {width: 350px;}
@@ -545,7 +560,7 @@ nav {padding-top: 62px;}
     }
     .features__case-title {font-size: 20px;}
 
-    .testi {margin-top: 100px;}    
+    .testi {margin-top: 100px;}
     .testi__bg {padding-top: 50px; height: 558px}
     .testi__slider-wrap {height: 300px; top: 151px; width: 1000px;}
     .slider__item-active {
@@ -569,7 +584,7 @@ nav {padding-top: 62px;}
         left: 276px;
     }
     .nav_links {margin-left: 25px;}
-    .promo__title {padding-top: 50px;}  
+    .promo__title {padding-top: 50px;}
     .features__subtitle {
         width: 100%;
         font-size: 16px;
@@ -584,11 +599,11 @@ nav {padding-top: 62px;}
     }
 
     .testi__bg {
-        padding-top: 20px; 
+        padding-top: 20px;
         padding-left: 20px;
         height: 441px
     }
-    .slider__item {      
+    .slider__item {
         padding: 25px;
     }
     .testi__title {text-align: center;}
@@ -598,7 +613,7 @@ nav {padding-top: 62px;}
         padding: 30px;
 
     }
-    
+
     .slider__item-text {font-size: 14px;}
     .slider__footer {
         margin-top: 331px;
@@ -607,7 +622,7 @@ nav {padding-top: 62px;}
     .slider__item-case-active {width: 315px;}
     .footer {height: 445px;}
     .footer__wrap {justify-content: space-around;}
-    
+
 }
 @media(max-width: 730px) {
     .promo__img {display: none;}
@@ -670,7 +685,7 @@ nav {padding-top: 62px;}
     .nav_links {width: 200px;}
     .features{margin-top: 80px;}
 
-    
+
 }
 
 @media(max-width: 415px) {
@@ -706,7 +721,7 @@ nav {padding-top: 62px;}
         justify-content: space-around;
         align-items: center;
     }
-    .features__case {margin-right: 0;} 
+    .features__case {margin-right: 0;}
     .testi__title {font-size: 30px;}
     .testi__slider-wrap {left: 5px; top: 100px;}
     .slider__item-case-active {width: 200px;}
